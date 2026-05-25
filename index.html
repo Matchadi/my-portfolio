@@ -163,7 +163,114 @@
 
 </section>
 
+<div class="text-center mt-5">
 
+<button class="btn btn-primary"
+data-bs-toggle="modal"
+data-bs-target="#contactModal">
+
+Contact Me
+
+</button>
+
+</div>
+<div class="modal fade" id="contactModal">
+
+<div class="modal-dialog">
+
+<div class="modal-content">
+
+<div class="modal-header">
+
+<h5 class="modal-title">
+Contact Form
+</h5>
+
+<button class="btn-close"
+data-bs-dismiss="modal"></button>
+
+</div>
+
+<div class="modal-body">
+
+<form
+class="needs-validation"
+novalidate
+action="contact.php"
+method="POST">
+
+
+
+
+<input
+type="text"
+name="name"
+class="form-control mb-3"
+placeholder="Full Name"
+required>
+
+<div class="invalid-feedback">
+Please enter your full name.
+</div>
+
+
+
+
+<input
+type="email"
+name="email"
+class="form-control mb-3"
+placeholder="Email Address"
+required>
+
+<div class="invalid-feedback">
+Please enter a valid email.
+</div>
+
+
+
+
+<input
+type="text"
+name="subject"
+class="form-control mb-3"
+placeholder="Subject"
+required>
+
+<div class="invalid-feedback">
+Please enter a subject.
+</div>
+
+
+
+
+<textarea
+name="message"
+class="form-control mb-3"
+placeholder="Message"
+minlength="20"
+required></textarea>
+
+<div class="invalid-feedback">
+Message must be at least 20 characters.
+</div>
+
+
+
+
+<button class="btn btn-primary w-100">
+Submit
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
 
 
 <!-- Bootstrap JS -->
